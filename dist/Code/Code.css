@@ -1,0 +1,43 @@
+/* Code Formatting*/
+code,
+kbd,
+pre,
+samp {
+  font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier,
+    monospace; /* 1 (changed) */
+  font-size: 1em; /* 2 */
+}
+
+code {
+  background: #fcf2f2;
+  border-radius: 0.1rem;
+  color: #d73e48;
+  font-size: 85%;
+  line-height: 1.25;
+  padding: 0.1rem 0.2rem;
+}
+
+.code {
+  border-radius: 0.1rem;
+  color: #3b4351;
+  position: relative;
+}
+
+.code::before {
+  color: #bcc3ce;
+  content: attr(data-lang);
+  font-size: 0.7rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.1rem;
+}
+
+.code code {
+  background: #f7f8f9;
+  color: inherit;
+  display: block;
+  line-height: 1.5;
+  overflow-x: auto;
+  padding: 1rem;
+  width: 100%;
+}
